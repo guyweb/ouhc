@@ -1,0 +1,68 @@
+/* StudentHome header, 2012 - bdg48 27/01/2014 @ 11:16 */
+
+.sh-header {margin:0; padding:0; float:left; clear:both; width:100%; height:auto; font-family:Tahoma, Arial, sans-serif; border-top-left-radius:0.5em; border-top-right-radius:0.5em; font-family:Tahoma, Geneva, sans-serif; float:left; clear:both; width:100%; border-top:1px solid #eee; border-bottom:1px solid #ddd; background-color:transparent; 	box-shadow: 0 3px 3px #eee;}
+
+.sh-header ul {
+	padding:0;
+	margin:0;
+	border-top-left-radius:0.5em;
+	border-top-right-radius:0.5em;
+	float:left;
+	clear:both;
+	width:100%;
+	background-image:url(gc-header-bg.png);
+	background-position:center center;
+	background-repeat:repeat-x;
+	border-bottom:1px solid #fff;
+	background-color:transparent;
+	overflow: hidden;
+}
+
+.sh-header ul ul {
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.sh-header ul li ul li {
+	display:block;
+	float:left;
+	border-right:1px solid #ddd;
+	list-style-type:none;
+}
+.sh-header ul li a,
+.sh-header ul strong  {
+	margin:0;
+	padding:0.8em 1em;
+	background-color:transparent;
+	border:none;
+	background-image:none;
+	border-radius:0;
+	display:block;
+	float:left;
+	text-decoration:none;
+	color:#333;
+	border-right:1px solid #fff;
+}
+
+.sh-header ul li a.ou-selected,
+.sh-header ul li.ou-expanded strong,
+.sh-header ul li li.ou-expanded a,
+body.sh-home li.sh-home a,
+body.sh-profile li.sh-profile a,
+body.sh-study li.sh-study a,
+body.sh-community li.sh-community a,
+body.sh-help li.sh-help a {
+	background-image:url(gc-header-bg-selected.png);
+	background-position:center center;
+	background-repeat:repeat-x;
+	border-right-color:#3E96BD;
+	color:#fff;
+	font-weight: normal;
+}
+
+.sh-header ul li a.selected:hover, body.sh-home li.sh-home a:hover, body.sh-profile li.sh-profile a:hover, body.sh-study li.sh-study a:hover, body.sh-community li.sh-community a:hover, body.sh-help li.sh-help a:hover {color:#fff;}
+.sh-header ul li a:hover {background-color:#eee; color:#000;}
+
+.sh-header ul li ul { clear: none; width: auto; }
+
+div#ou-org {max-width:none;}

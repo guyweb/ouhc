@@ -1,0 +1,146 @@
+/*
+ * OU Carousel
+ */
+
+div.ou-carousel-container {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 23px; /* space for bullets */
+}
+
+div.ou-carousel-mobile {
+	background: #39393B url(bg-slider.jpg);
+	background-clip: content-box;
+}
+
+div.ou-carousel-container > ul.slider {
+	width: 99999px;
+	height: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+div.ou-carousel-container > button.btnPrevNext {
+	position: absolute;
+	cursor: pointer;
+	width: 45px;
+	height: 44px;
+	background: url(nextprev.png) no-repeat;
+	top: 30%;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	
+	-webkit-transition: opacity 0.3s, left 0.2s, right 0.2s;
+	   -moz-transition: opacity 0.3s, left 0.2s, right 0.2s;
+	        transition: opacity 0.3s, left 0.2s, right 0.2s;
+}
+
+div.ou-carousel-container:hover > button.btnPrevNext {
+	opacity: 1;
+}
+
+div.ou-carousel-container > button.btnPrev {
+	left: -45px;
+}
+
+div.ou-carousel-container > button.btnNext {
+	right: -45px;
+	background-position: -45px 0px;
+}
+
+div.ou-carousel-container:hover > button.btnPrev {
+	left: 0px;
+}
+
+div.ou-carousel-container:hover > button.btnNext {
+	right: 0px;
+}
+
+div.ou-carousel-container > button.btnPrev:hover {
+	background-position: 0px -44px;
+}
+
+div.ou-carousel-container > button.btnNext:hover {
+	background-position: -45px -44px;
+}
+
+div.ou-carousel-container > ul.slider > li {
+	display: block;
+	position: relative;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+}
+
+div.ou-carousel-container > ul.slider > li > a > img {
+	width: 100%;
+}
+
+div.ou-carousel-container > ul.slider > li > p {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 36px;
+	background: #FFF;
+	padding: 8px 1em;
+	margin: 0;
+
+	-ms-box-sizing:     border-box;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:         border-box;
+
+	-webkit-text-size-adjust: 100%;
+}
+
+.ie7 div.ou-carousel-container > ul.slider > li > p,
+.ie8 div.ou-carousel-container > ul.slider > li > p {
+	min-height: 21px;
+}
+
+div.ou-carousel-container > ul.slider > li > p a {
+	color: #039;
+}
+
+div.ou-carousel-container > ul.bullets {
+	height: 20px;
+	margin: 0;
+	padding: 5px 0 0 0;
+	list-style: none;
+	text-align: center;
+}
+
+.ie7 div.ou-carousel-container > ul.bullets {
+	padding-top: 8px;
+}
+
+div.ou-carousel-container > ul.bullets > li {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0px 10px 0 0;
+	width: 9px;
+	height: 9px;
+	background-color: #CCC;
+	border-radius: 9px;
+	vertical-align: middle;
+	
+	/* IE7 inline-block workaround */
+	zoom: 1; 
+	*display: inline;
+}
+
+div.ou-carousel-container > ul.bullets > li:hover {
+	background-color: #999999;
+}
+
+div.ou-carousel-container > ul.bullets > li.active {
+	background-color: #A3336B;
+	width: 11px;
+	height: 11px;
+}
+

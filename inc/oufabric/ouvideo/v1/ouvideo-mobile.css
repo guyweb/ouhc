@@ -1,0 +1,19 @@
+/* 
+ * OU Video - Mobile
+ * Jack Chapple
+ */
+
+div.ouvideo {
+	background-color: #222;
+}
+
+div.ouvideo > ul.tabs {
+	padding: 1em 1em 0 1em;
+}
+
+div.ouvideo > ul.tabs li a {
+	padding: .5em 1em;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	border-radius: .5em;
+}

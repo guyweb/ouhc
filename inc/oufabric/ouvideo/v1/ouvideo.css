@@ -1,0 +1,234 @@
+/* 
+ * OU Video
+ * Jack Chapple
+ */
+
+div.ouvideo {
+	border-radius: .5em;
+	overflow: hidden;
+	padding: 0;
+	margin: 1.5em 0;
+	z-index: 1;
+	clear:both;
+}
+
+div.ouvideo > div > .tab-title {
+	display: none;
+}
+
+div.ouvideo > div > .description,
+div.ouvideo > div > p,
+div.ouvideo > div > div.video p {
+	display: block;
+	margin: 1em auto 2em auto;
+	color: #FFF;
+	max-width: 560px;
+}
+
+div.ouvideo > ul.tabs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+div.ouvideo > ul.tabs li {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+}
+
+div.ouvideo > ul.tabs li a {
+	display: block;
+	float: left;
+	padding: .9em 1em .6em 1em;
+	color: #ccc;
+	background-color: #333;
+	margin-right: 5px;
+	margin-bottom: 0;
+	text-decoration: none;
+	border-top-left-radius: .6em;
+	border-top-right-radius: .6em;
+	background-image: url(img/youarehere-inactive.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+div.ouvideo.ouvideo-alttabs {
+	background-color: #222;
+}
+
+div.ouvideo.ouvideo-alttabs > ul.tabs {
+	padding: 1em 1em 0 1em;
+}
+
+div.ouvideo.ouvideo-alttabs > ul.tabs li a {
+	padding: .5em 1em;
+	margin-right: 10px;
+	margin-bottom: 8px;
+	border-radius: .5em;
+}
+
+div.ouvideo > ul.tabs li a:hover {
+	background-color: #666;
+	background-image: none;
+	color: #fff;
+}
+
+div.ouvideo > ul.tabs li.active a {
+	background-color: #7F7F7F;
+	background-image: url(img/youarehere.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	color: #fff;
+	cursor: default;
+}
+
+div.ouvideo > div {
+	overflow: hidden;
+	text-align: center;
+	padding: 1em 1em .5em 1em;
+	background-image: url(img/bg-vid.png);
+	background-position: center 8em;
+	background-repeat: no-repeat;
+	background-color: #222;
+	border-top: 5px solid #7F7F7F;
+}
+
+div.ouvideo > div .info-btm {
+	margin: 30px 0 15px 0;
+}
+
+div.ouvideo > div .info-btm .time,
+div.ouvideo > div > .duration {
+	color: #FFF;
+	padding-left: 22px;
+	background-image: url(img/icon-vid-time.png) ;
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+div.ouvideo > div > .video > .flowplayer {
+	width: 100%;
+	max-width: 560px;
+	background: #000;
+	overflow: hidden;
+}
+
+div.ouvideo > div > .video > .is-splash {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+div.ouvideo > div > .video > .is-ready {
+	background-image: none !important;
+}
+
+div.ouvideo > div > .video > .player > video {
+	width: 100%;
+}
+
+div.ouvideo > div > .video > .player > object {
+	background: #000;
+	margin: 0;
+}
+
+div.ouvideo > div > .video .fp-embed {
+	display: none;
+}
+
+div.ouvideo > div > .video .is-fullscreen {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+div.ouvideo > div > .video > a > img {
+	display: inline;
+}
+
+div.ouvideo > div > .duration {
+	display: table;
+	margin: 30px auto 15px auto;
+}
+
+div.ouvideo > div .info-btm .transcript {
+	color: #FFF;
+	text-decoration: none;
+	padding-left: 22px;
+	background-image: url(img/icon-vid-trans.png) ;
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+div.ouvideo > div .info-btm .time {
+	margin: 0 30px 0 0;
+}
+
+div.ouvideo > div > .transcript {
+	display: block;
+	text-align: left;
+	background-color: #fff;
+	max-width: none;
+	padding: 3em;
+	margin: 0 1em 1em 1em;
+	border-radius: .5em;
+}
+
+div.ouvideo > div > .transcript > blockquote {
+	/*font-family: Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;*/
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+div.ouvideo > div > .transcript > blockquote p {
+	color: #111;
+}
+
+
+/* Steven Price 17.10.2012 override fixed iframe height and width in OU ICE */
+
+div.ouvideo iframe {
+	height:315px !important;
+	width:560px !important;
+	max-width:100% !important;
+	border:0 !important;
+}
+
+/* Steven Price 08.11.2012 added style for h2 in transcript */
+div.ouvideo > div > .transcript h2 {
+	margin-top:1em;
+	font-size:1.5em;
+}
+
+
+div.ouvideo > div > .transcript h2:first-child {
+	margin-top:0;	
+}
+
+div.ouvideo > div > .video > .help { color: #fff; font-size: 11px; margin-top: 4px; }
+
+div.ouvideo > div > .video > div.player a.play-accessible {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #000;
+	width: 10%;
+	height: 20%;
+	margin-left: -5%;
+	margin-top: -6%;
+	
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+}
+
+div.ouvideo > div > .video > div.player a.play-accessible:focus {
+	outline: 3px solid #FFC629;
+	outline-offset: 10px;
+	z-index: 0;
+}

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+	<section name="1">
+		<title>Your mobility</title>
+		<fieldset name="1">
+			<legend>What mobility needs do you have?</legend>
+			
+			<!-- Text Block example -->
+			<field name="helloworld" type="content">
+				<type>textblock</type>
+				<content>
+					<![CDATA[ 
+				    	<p style="font-size: 14px;">You can bring your own equipment to use during residential school but it is important to tell us what items you are taking before your school starts.</p>
+				  	]]>
+				</content>
+			</field>
+			
+			<!-- Text example -->
+			<field name="name">
+				<type>text</type>
+				<validation>required</validation>
+				<input>
+					<label>What's your name?</label>
+					<info>Hello</info>
+					<params>
+						<id>name</id>
+						<placeholder>Your name</placeholder>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Hidden example -->
+			<field name="pi">
+				<type>hidden</type>
+				<input>
+					<label>PI</label>
+					<params>
+						<id>pi</id>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Number example (note: all new HTML5 input types are supported) -->
+			<field name="age">
+				<type>number</type>
+				<input>
+					<label>How old are you?</label>
+					<params>
+						<id>age</id>
+						<value>18</value>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Radio example -->
+			<field name="oddeven" describedby="helloworld">
+				<type>radio</type>
+				<title>Choose odd or even</title>
+				<info>A title info!</info>
+				<validation>required</validation>
+				<input>
+					<label>Odd</label>
+					<info>This is some info!!</info>
+					<params>
+						<id>oddeven-odd</id>
+						<value>odd</value>
+					</params>
+				</input>
+				<input>
+					<label>Even</label>
+					<info>This is some info!!</info>
+					<params>
+						<id>oddeven-even</id>
+						<value>even</value>
+					</params>
+				</input>
+			</field>
+			
+			<field name="blah" type="content">
+				<type>textblock</type>
+				<conditions>
+					<condition>oddeven:even</condition>
+				</conditions>
+				<content>Hello People</content>
+			</field>
+			
+		</fieldset>
+		
+		<fieldset name="2">
+			<legend>Fieldset 2</legend>
+			
+			<field name="test1" type="content">
+			  <type>textblock</type>
+			  <content>Hello world</content>
+			</field>
+			
+			<!-- Radio example -->
+			<field name="gender">
+				<type>radio</type>
+				<title>Select your gender</title>
+				<validation>required</validation>
+				<conditions>
+				  <condition>oddeven:odd</condition>
+				</conditions>
+				<input>
+					<label>Male</label>
+					<params>
+						<id>gender-m</id>
+						<value>male</value>
+					</params>
+				</input>
+				<input>
+					<label>Female</label>
+					<params>
+						<id>gender-f</id>
+						<value>female</value>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Select example (note: multiple selections not suported yet) -->
+			<field name="skirtsize">
+				<type>select</type>
+				<validation>required</validation>
+				<conditions> <!-- Only radios buttons or select boxes can be used as condition triggers -->
+					<condition>gender:female</condition> <!-- Syntax: name:value -->
+				</conditions>
+				<input>
+					<label>What skirt size are you?</label>
+					<params>
+						<id>skirtsize</id>
+					</params>
+					<options>
+						<option>
+							<title>- Select -</title>
+							<params>
+								<value></value>
+							</params>
+						</option>
+						<option>
+							<title>X-Small</title>
+							<params>
+								<value>xsmall</value>
+							</params>
+						</option>
+						<option>
+							<title>Small</title>
+							<params>
+								<value>small</value>
+								
+							</params>
+						</option>
+						<option>
+							<title>Medium</title>
+							<params>
+								<value>medium</value>
+							</params>
+						</option>
+						<option>
+							<title>Large</title>
+							<params>
+								<value>large</value>
+							</params>
+						</option>
+					</options>
+				</input>
+			</field>
+			
+			<!-- Radio example -->
+			<field name="yourcolor">
+				<type>radio</type>
+				<title>Pick a colour</title>
+				<validation>required</validation>
+				<conditions>
+					<condition>skirtsize:large</condition>
+					<condition>skirtsize:small</condition>
+				</conditions>
+				<input>
+					<label>Red</label>
+					<params>
+						<id>color-red</id>
+						<value>red</value>
+					</params>
+				</input>
+				<input>
+					<label>Yellow</label>
+					<params>
+						<id>color-yellow</id>
+						<value>yellow</value>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Number example (note: all new HTML5 input types are supported) -->
+			<field name="yournumber">
+				<type>number</type>
+				<validation>required</validation>
+				<conditions>
+					<condition>yourcolor:yellow</condition>
+				</conditions>
+				<input>
+					<label>Enter a number</label>
+					<params>
+						<id>yournumber</id>
+						<value>0</value>
+					</params>
+				</input>
+			</field>
+			
+		</fieldset>
+		
+	</section>
+	
+	<section name="2">
+		<title>Section 2</title>
+		
+		<fieldset name="3">
+			<legend>Fieldset 3</legend>
+			
+			<!-- Textarea example -->
+			<field name="bio">
+				<type>textarea</type>
+				<validation>required</validation>
+				<input>
+					<label>Biography</label>
+					<params>
+						<id>bio</id>
+						<placeholder>Your biography</placeholder>
+						<cols>50</cols>
+						<rows>5</rows>
+					</params>
+				</input>
+			</field>
+			
+			<!-- Checkbox example -->
+			<field name="hobby">
+		        <type>checkbox</type>
+				<title>What are your hobbies?</title>
+				<validation>required</validation>
+				
+				<input>
+					<label>Gym</label>
+					<key>gym</key>
+					<params>
+						<id>hobby_gym</id>
+						<value>1</value>
+					</params>
+				</input>
+				<input>
+					<label>Music</label>
+					<key>music</key>
+					<params>
+						<id>hobby_music</id>
+						<value>1</value>
+					</params>
+				</input>
+				<input>
+					<label>Lego</label>
+					<key>lego</key>
+					<params>
+						<id>hobby_lego</id>
+						<value>1</value>
+					</params>
+				</input>
+				
+			</field>
+			
+			<field name="test" type="content">
+				<type>textblock</type>
+				<conditions>
+					<condition>hobby[gym]:1</condition>
+				</conditions>
+				<content>OK Mr Muscle!</content>
+			</field>
+			
+		</fieldset>
+	</section>
+</form>

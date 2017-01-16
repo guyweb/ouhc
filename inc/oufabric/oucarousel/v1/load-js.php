@@ -1,0 +1,1 @@
+<script src="/ldt_shared/oufabric/plugins/oucarousel/v1/gui/oucarousel.js"></script>

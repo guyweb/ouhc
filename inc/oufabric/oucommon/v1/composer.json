@@ -1,0 +1,23 @@
+{
+  "name": "oufabric/oucommon",
+
+  "autoload": {
+    "psr-4": {
+      "OUFabric\\OUCommon\\Models\\": "models/"
+    },
+
+    "classmap": [
+      "AbstractDataStore.class.php",
+      "DataCache.class.php",
+      "DataOpen.class.php",
+      "DataPersist.class.php",
+      "Database.class.php",
+      "Encoding.class.php",
+      "OUCommon.class.php",
+      "OUSams.class.php",
+      "Sanitisation.class.php",
+      "URICache.class.php"
+    ]
+
+  }
+}

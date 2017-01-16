@@ -1,0 +1,6 @@
+MONDAY:
+CSS boilerplate
+Validation GUI
+
+Mobile styles
+Print styles

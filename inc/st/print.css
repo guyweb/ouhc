@@ -1,0 +1,78 @@
+@media print { 
+
+div#ou-region0,
+div#ou-region2,
+div#ou-header div#ou-header-nav,
+div#ou-site-header,
+div#ou-site-footer div.group,
+div#ou-org-footer,
+div.ou-paged,
+div.page-of-pages,
+div.content-bottom,
+div.cols-1,
+div.hero,
+div.category img,
+div.booklet-download img,
+div.video {
+    display:none;
+}
+
+div#ou-site-body,
+div#ou-page,
+div#ou-region1,
+div.wrap-3-col {
+    width:100%;
+    max-width:100%;
+}
+
+@page {
+    margin: 0.5cm;
+}
+
+div#ou-site-body:before {
+    content: "www.open.ac.uk/students/help";
+    display: block;
+    margin-top:1em;
+}
+
+body, p, h1, h2, h3, h4, h5, a,
+div#ou-site-footer p {
+    color: #000;
+}
+
+div#ou-site-footer p {
+    font-size: 10pt;
+    padding-left:0;
+}
+
+body {
+    font-size: 11pt;
+    line-height: 1.3;
+}
+
+div.ou-content {
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    padding-left:0;
+}
+
+div#ou-region1 {
+    background-color:transparent;
+}
+
+#ou-header a.ou-logo {
+    display:none;
+    float: none;
+    margin-top: 1em;
+}
+
+div.item.category,
+div.item.booklet-download {
+    border-top:none;
+}
+
+
+}

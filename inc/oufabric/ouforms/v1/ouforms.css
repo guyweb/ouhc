@@ -1,0 +1,93 @@
+div.ouforms h2 {margin:1em 0;}
+div.ouforms p.title {font-weight:bold;margin-top:0;display:inline;}
+div.ouforms div.no-title label {margin:0.5em 0 1em 0;display:block;font-weight:bold;text-shadow: 1px 1px 1px hsla(0,0%,100%,0.7);}
+div.ouforms  input[type="url"],
+div.ouforms  input[type="text"],
+div.ouforms  input[type="email"],
+div.ouforms  input[type="tel"],
+div.ouforms  input[type="date"],
+div.ouforms  input[type="number"],
+div.ouforms  textarea {background-color: #FFFFFF;border: 1px solid #CCCCCC;margin:0;padding: 0.5em;width: 50%;}
+div.ouforms  input[type="text"]:focus,
+div.ouforms  input[type="email"]:focus,
+div.ouforms  input[type="tel"]:focus,
+div.ouforms  input[type="date"]:focus,
+div.ouforms  input[type="number"]:focus,
+div.ouforms textarea:focus {background-color: #EFF8DB;border: 1px solid #99CC66;}
+
+
+div.ouforms div.edit p.title, 
+div.ouforms div.edit div.input-text label,
+div.ouforms div.edit div.input-textrarea label {color:#006633;}
+div.ouforms div.edit input[type="text"],
+div.ouforms div.edit input[type="email"],
+div.ouforms div.edit input[type="tel"],
+div.ouforms div.edit input[type="date"],
+div.ouforms div.edit input[type="number"] {background-color: #EFF8DB;border: 1px solid #99CC66;}
+
+
+div.ouforms div.error p.title, 
+div.ouforms div.error div.input-text label,
+div.ouforms div.error div.inputs-textarea label {color:#C10031;}
+div.ouforms div.error input[type="text"],
+div.ouforms div.error textarea,
+div.ouforms div.error input[type="email"],
+div.ouforms div.error input[type="tel"],
+div.ouforms div.error input[type="date"],
+div.ouforms div.error input[type="number"] {background-color: #FFF;border: 1px solid #C10031;}
+
+
+
+div.ouforms input[type="radio"] {margin: 0;}
+div.ouforms fieldset {
+	padding: 1em 2em;background-color: #E6EBF3;border:none;
+	margin:2em 0;
+}
+
+
+div.ouforms span.required,
+div.ouforms span.requiredAll,
+div.ouforms span.requiredMax,
+div.ouforms span.requiredEmailFormat {font-weight:normal;font-size:0.8em;color: #C10031;}
+div.ouforms div.field-content  {background-color:#FFF;background-color: hsla(0,0%,100%,0.9);padding:0.3em 1em;-webkit-border-radius:0.5em;-moz-border-radius:0.5em;border-radius:0.5em;font-size:1.1em;line-height:1.5;}
+div.ouforms a.info {background-image: url("icon-wizard-info.png");background-size:100% 100%;height:16px;width:16px;background-position: center center;background-repeat: no-repeat;background-color:transparent;border:none;border-radius:0;text-indent: -9999px;padding:0;display:inline-block;}
+div.ouforms div.toggle-info  {margin:0.5em 0 1em 0;font-style:italic;background-color:#FFF;padding:1em;-moz-border-radius:0.5em;-webkit-border-radius:0.5em;border-radius:0.5em;}
+div.ouforms div.errors {background-image: url("icon-wizard-alert.png");background-position: top left;background-repeat: no-repeat;border-bottom: 1px solid #DDDDDD;margin-bottom: 1em;padding-bottom:0.8em;padding-left:50px;/*margin-left:-50px;*/}
+div.ouforms div.errors p {font-size:1.4em;color: #C10031;}
+div.ouforms div.errors ul {margin-left:0;padding-left:0;}
+div.ouforms div.errors ul li {list-style-type:none;margin-left:0;padding-left:0;}
+div.ouforms div.errors ul li a {text-decoration:none;font-style:italic;color:#333;}
+div.ouforms div.errors span.field_name { font-weight: bold;}
+div.ouforms div.errors ul li a:hover {color:#C10031;}
+div.ouforms div.label-container {display:inline;}
+div.ouforms div.field-container {margin:1.5em 0;border-bottom:1px solid #FFF;padding:0 0 1.5em 0;}
+div.ouforms div.input-checkbox {margin:0.5em 1em;}
+div.ouforms div.input-checkbox:last-child {margin-bottom:0;}
+div.ouforms div.input-radio {display:inline;padding-right:1em;}
+div.ouforms div.title-container {margin:1em 0;}
+div.ouforms div.field-content {padding: 1em 1em 0 1em;}
+
+input.ou-next:after {content: " > ";}
+input.ou-next {color: #285E6F;background-image: url("http://www.open.ac.uk/includes/ouice/3/bg-prev-button.jpg");background-position: left bottom;background-repeat: repeat-x;border: 1px solid #CCCCCC;border-radius: 6px 6px 6px 6px;display: inline-block;margin: 0 0.25em;padding: 0.5em 1em;text-decoration: none;font-family:Arial, Helvetica, sans-serif;}
+input.ou-next:hover {border-color: #AAAAAA;color: #CC3300;cursor:pointer;}
+
+/* We will hide this by positioning it offsecreen so that spam bots will still fill it in */
+div.ouforms div.ou-honigfalle {
+	position: absolute;
+	left: -9999em;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+
+div.ouforms-summary tbody tr:hover {background-color:transparent;border:none;}
+div.ouforms-summary tbody tr:hover td, div.ouforms-summary tbody tr:hover th {background-color:transparent;border:none;}
+div.ouforms-summary table {border:1px solid #E6EBF3;background-color: #E6EBF3;background-color: rgba(230, 235, 243, 1);padding: 1em 2em;margin:2em 0;}
+div.ouforms-summary table tr {border: 1px solid #D6E8F0;}
+div.ouforms-summary tbody tr:nth-child(2n+1) {background-color:#FFF;}
+div.ouforms-summary th, div.ouforms-summary td, div.ouforms-summary caption {padding: 1em 2em;font-weight:normal}
+div.ouforms-summary tr.section th {font-family: "Myriad Pro",Calibri,Tahoma,"Lucida Grande",Arial,Helvetica,sans-serif;font-weight:normal;font-size:1.4em;padding:1.5em 0 1em 1.5em;}
+div.ouforms-summary tr.fieldset th {font-weight:bold;}
+div.ouforms-summary td.value_column {font-style:italic;}
+div.ouforms-summary td.value_column ul {padding-left:0;margin-left:1em;}
+div.ouforms-summary td.edit_column a {background:url(icon-edit.png) no-repeat center left;padding-left:2em;}
